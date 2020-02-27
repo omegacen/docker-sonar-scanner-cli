@@ -5,7 +5,7 @@ LABEL description="SonarScanner + other utils"
 
 USER root
 
-RUN apt update && apt-get install -y curl \
+RUN apt update && apt-get install -y curl jq \
     && rm -rf /var/lib/apt/lists/*
 
 USER scanner-cli
