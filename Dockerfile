@@ -5,7 +5,8 @@ LABEL description="SonarScanner + other utils"
 
 USER root
 
-RUN apt update && apt-get install -y curl jq \
-    && rm -rf /var/lib/apt/lists/*
+RUN apt update && apt-get install -y curl jq python3-pip \
+    && rm -rf /var/lib/apt/lists/* \
+    && pip3 install pylint
 
 USER scanner-cli
