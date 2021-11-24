@@ -1,4 +1,4 @@
-FROM sonarsource/sonar-scanner-cli:4.4
+FROM sonarsource/sonar-scanner-cli:4.6
 
 LABEL maintainer="teake.nutma@gmail.com"
 LABEL description="SonarScanner + other utils"
